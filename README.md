@@ -1,4 +1,4 @@
-# Inheadane docker images
+# Inheaden docker images
 
 This repository stores Dockerfiles and corresponding configurations for docker images used and maintained by [Inheaden](https://inheaden.io).
 
