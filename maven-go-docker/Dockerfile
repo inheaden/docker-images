@@ -4,7 +4,7 @@ RUN apt-get -yq update \
   && apt-get -yq install software-properties-common curl ca-certificates \
   && add-apt-repository ppa:longsleep/golang-backports \
   && apt-get -yq update \
-  && apt-get -yq install openjdk-11-jdk curl golang-go \
+  && apt-get -yq install openjdk-11-jdk curl golang-go git \
   && rm -rf /var/lib/apt/lists/*
 
 RUN adduser maven --disabled-password
