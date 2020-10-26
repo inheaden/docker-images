@@ -12,6 +12,10 @@ An image using JDK-11 and maven while running under a non-root user. This for ex
 
 Specialized docker image for use with our internal CI system. Supplies maven, JDK-11, go and docker.
 
+### go-docker
+
+Specialized docker image to run integration tests of go applications using dockertest.
+
 ## License
 
 All images are licensed under the MIT-License.
