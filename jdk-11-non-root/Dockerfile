@@ -1,5 +1,19 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
-RUN adduser --disabled-password user
+ENV USER=docker
+ENV UID=1001
+ENV GID=2001
 
-USER user
+RUN addgroup \
+  --gid "${GID}" \
+  "${USER}"
+RUN adduser \
+  --disabled-password \
+  --gecos "" \
+  --home "$(pwd)" \
+  --ingroup "${USER}" \
+  --no-create-home \
+  --uid "$UID" \
+  "${USER}"
+
+USER ${USER}
