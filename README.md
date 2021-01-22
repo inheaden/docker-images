@@ -16,6 +16,10 @@ Specialized docker image for use with our internal CI system. Supplies maven, JD
 
 Specialized docker image to run integration tests of go applications using dockertest.
 
+### node-docker
+
+Specialized docker image to build node container.
+
 ### jdk-11-non-root
 
 Simple JDK 11 image running as non root.
